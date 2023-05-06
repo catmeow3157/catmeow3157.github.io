@@ -43,7 +43,7 @@ h1 {
 
 h2 {
   font-family: 'Oswald', sans-serif;
-  font-size: 18px;
+  font-size: px;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
@@ -63,12 +63,17 @@ img {
   margin: auto;
   padding: 50px;
   display: block;
+  font-size: 30px;
+}
+
+p span {
+  display: block;
 }
 
 .bio {
-color: #ffffff;
-font-size: 24px;
-font-family: 'Source Sans Pro', sans-serif;
+  color: #ffcd70f6;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .buttonBox {
@@ -79,7 +84,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .myButton {
   border-radius: 28px;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffc04b;
   cursor: pointer;
   color: #ffffff;
   font-size: 20px;
@@ -89,7 +94,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .myButton:hover {
-    background-color:#e69708;
+    background-color:#cc6cdfce;
 }
 
 .myButton:active {
@@ -104,21 +109,15 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .description {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
   color: #4a4a4a;
   padding: 0 20px 20px 20px;
+  padding-top: 1cm;
   border-top: 1px solid #4a4a4a;
-}
-
-.logo {
-  width: 115px;
-  height: 21.1px;
-  object-fit: contain;
-  padding: 20px;
 }
 
 .container {
@@ -129,11 +128,21 @@ font-family: 'Source Sans Pro', sans-serif;
   footer div {
     height: 100%;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     align-content: center;
     padding: 10px 20px;
     color: rgba(255, 255, 255, 0.5);
   }
 
-
+  @media all and (max-width:700px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+    .description {
+      font-size: 18px;
+    }
+    img {
+      height: 38vh;
+    }
+  }
